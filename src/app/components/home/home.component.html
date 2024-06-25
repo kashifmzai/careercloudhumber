@@ -1,0 +1,13 @@
+<h2>Home Page</h2>
+
+<label for="jobTypeFilter">Filter by Job Type:</label>
+<select
+  id="jobTypeFilter"
+  [(ngModel)]="selectedJobType"
+  (change)="onJobTypeChange()"
+>
+  <option value="All">All</option>
+  <option *ngFor="let type of jobTypes" [value]="type">{{ type }}</option>
+</select>
+
+<app-job-list [jobs]="filteredJobs"></app-job-list>

@@ -1,0 +1,32 @@
+<nav class="navbar">
+  <ul class="nav-list">
+    <li>
+      <a
+        class="nav-link"
+        routerLink="/"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        class="nav-link"
+        routerLink="/admin"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Admin</a
+      >
+    </li>
+    <ng-container *ngIf="user; else loginButton">
+      <li class="nav-text">Welcome, {{ user.displayName }}!</li>
+      <button class="nav-button" (click)="logout()">Logout</button>
+    </ng-container>
+    <ng-template #loginButton>
+      <li class="nav-text">Welcome, Guest!</li>
+      <button class="nav-button" (click)="loginWithGoogle()">
+        Login with Google
+      </button>
+    </ng-template>
+  </ul>
+</nav>

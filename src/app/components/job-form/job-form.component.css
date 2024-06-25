@@ -1,0 +1,119 @@
+.job-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.skills {
+  margin-bottom: 16px;
+}
+
+.add-skill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-skill-button:hover {
+  background-color: #0056b3;
+}
+
+.add-skill-button svg,
+.remove-skill-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+}
+
+.skill-item .form-input {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.remove-skill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-skill-button:hover {
+  background-color: #c82333;
+}
+
+.form-button {
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.add-button {
+  background-color: #4caf50;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.cancel-button {
+  background-color: #ff0000;
+}
+
+.cancel-button:hover {
+  background-color: #d40000;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-bottom: 12px;
+}
